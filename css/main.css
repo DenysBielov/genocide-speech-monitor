@@ -143,6 +143,10 @@ header {
   align-items: stretch;
 }
 .link {
+  padding: 8px;
+  white-space: nowrap;
+  background-color: white;
+  border: 1px #D6D6D6 solid;
   color: #737373;
   font-weight: 700;
   line-height: 16px;
@@ -461,12 +465,5 @@ header {
 
   .custom-popup-first {
     padding-top: 40px;
-  }
-
-  .link {
-    background-color: white;
-    padding: 8px;
-    border: 1px #D6D6D6 solid;
-    white-space: nowrap;
   }
 }

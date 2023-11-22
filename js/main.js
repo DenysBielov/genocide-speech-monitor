@@ -3,7 +3,7 @@ const { default: colorsLegend } = await import("../colorsLegend.json", { assert:
 
 const allKeys = colorsLegend.map((e) => e.value);
 
-let currentYear = 2022;
+let currentYear = 1932;
 
 const rangeBtns = [...document.querySelectorAll(".range__item-text")];
 
