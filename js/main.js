@@ -1,5 +1,5 @@
-import colorsLegend from '../colorsLegend.json' assert {type: 'json'};
-import genocideData from '../genocideData.json' assert {type: 'json'};
+const { default: genocideData } = await import("../genocideData.json", { assert: { type: "json" } })
+const { default: colorsLegend } = await import("../colorsLegend.json", { assert: { type: "json" } })
 
 const allKeys = colorsLegend.map((e) => e.value);
 

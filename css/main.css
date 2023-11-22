@@ -106,6 +106,8 @@ header {
 }
 
 .menu {
+  justify-self: end;
+  align-self: end;
   display: flex;
   gap: 40px;
   align-items: center;
@@ -124,8 +126,8 @@ header {
 
 .header-down {
   position: relative;
+  justify-content: end;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 16px 12px 16px 12px;
   background: #f0f0f0;
@@ -134,7 +136,8 @@ header {
 .range {
   position: absolute;
   bottom: -2px;
-  width: 78%;
+  left: 0;
+  width: 75%;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -346,6 +349,14 @@ header {
   display: none;
 }
 
+.warn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
 @media (max-width: 1279px) {
   .copyright__inn {
     display: none;
@@ -366,6 +377,7 @@ header {
     position: fixed;
     top: 8px;
     right: 16px;
+    gap: 1rem
   }
 
   .copyright {
@@ -449,5 +461,12 @@ header {
 
   .custom-popup-first {
     padding-top: 40px;
+  }
+
+  .link {
+    background-color: white;
+    padding: 8px;
+    border: 1px #D6D6D6 solid;
+    white-space: nowrap;
   }
 }
