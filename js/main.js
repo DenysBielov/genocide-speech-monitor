@@ -132,10 +132,16 @@ function makeMap(data) {
 
         const isRussia = ["Russia"].includes(isIncluded.country);
         const isUSSR = ["USSR"].includes(isIncluded.country);
-        var popupContent = `<div class="tooltips"><div class="tooltips__left">
-      <em class="tooltips__left_text">"${isIncluded.quotes[0].text}"</em>
-      <span class="tooltips__left_author">${isIncluded.quotes[0].author}</span>
-      <div><span class="tooltips__country">${name}</span></div>`;
+        var popupContent = `
+        <div class="tooltips">
+            <div class="tooltips__left">
+                <span class="tooltips__left_text">"${isIncluded.quotes[0].text}"</span>
+                <span class="tooltips__left_author">${isIncluded.quotes[0].author}</span>
+                <div>
+                    <span class="tooltips__country">${name}</span>
+                </div>
+            </div>
+        </div>`;
 
         layer
             .on("mouseover", function () {
