@@ -1,7 +1,19 @@
-const { default: genocideData } = await import("../genocideData.json", { assert: { type: "json" } })
-const { default: colorsLegend } = await import("../colorsLegend.json", { assert: { type: "json" } })
+let allKeys;
+let colorsLegend;
+let genocideData;
 
-const allKeys = colorsLegend.map((e) => e.value);
+fetch('../colorsLegend.json')
+.then(response => response.json())
+.then(data => {
+  colorsLegend = data;
+  allKeys = colorsLegend.map((e) => e.value);
+});
+
+fetch('../genocideData.json')
+.then(response => response.json())
+.then(data => {
+  genocideData = data;
+});
 
 let currentYear = 1932;
 
