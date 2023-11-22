@@ -440,6 +440,7 @@ p.disclaimer__text {
     right: 50%;
     transform: translateX(50%);
     min-width: 320px;
+    width: 335px;
   }
 
   .legend {
