@@ -1,0 +1,10 @@
+.black-link {
+    color: #0F0F0F;
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+.gray-link {
+    color: #737373;
+    text-underline-offset: 3px;
+}
