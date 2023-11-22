@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-family: Public Sans;
   position: relative;
+  margin: 0;
 }
 
 header {
@@ -124,6 +125,7 @@ h2 {
 
 .text {
   max-height: 390px;
+  min-height: 40px;
   overflow: auto;
   position: relative;
   display: block;
@@ -319,6 +321,15 @@ h2 {
   .title {
     font-size: 1.5rem;
     letter-spacing: normal;
+    margin: 12px 0 18px;
+    letter-spacing: -1.44px;
+  }
+
+  .close-icon {
+    height: auto;
+    width: auto;
+    right: 11px;
+    top: 33px;
   }
 
   h2 {
@@ -327,11 +338,26 @@ h2 {
 
   .main-container {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     padding-top: 1rem;
   }
 
   .speech-input-wrapper {
     gap: 0.5rem;
+  }
+
+  .text-danger.label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    line-height: 20px;
+    display: block;
+  }
+  .text-danger {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .disclaimer {
+    padding: 8px 12px;
   }
 }

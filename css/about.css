@@ -160,7 +160,7 @@ p.disclaimer__text {
   }
 
   .container {
-    padding: 10px 16px 0 16px;
+    padding: 16px 16px 0 16px;
   }
 
   .h1 {
@@ -172,12 +172,18 @@ p.disclaimer__text {
   }
 
   .close-icon {
-    top: 21px;
+    top: 33px;
+    right: 11px;
   }
 
   .disclaimer {
     margin-bottom: 40px;
     max-width: inherit;
+    padding: 8px 12px;
+  }
+
+  .disclaimer__header {
+    margin-bottom: 4px;
   }
 
   .content__left,
