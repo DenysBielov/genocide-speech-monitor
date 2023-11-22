@@ -342,8 +342,43 @@ h2 {
     padding-top: 1rem;
   }
 
+  .text-wrapper:after {
+    display: none;
+  }
+
   .speech-input-wrapper {
     gap: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    z-index: 1;
+    left: 0;
+    padding: 16px;
+    border-top: solid 1px #E5E5E5;
+  }
+
+  .speech-input-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -51px;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, white);
+    left: 0;
+    height: 50px;
+  }
+
+  .analyse-wrapper {
+    padding-top: 32px;
+    padding-bottom: 300px;
+  }
+
+  .text {
+    overflow: initial;
+    max-height: initial;
+  }
+
+  #speech-text {
+    max-height: 100px;
   }
 
   .text-danger.label {
@@ -352,6 +387,7 @@ h2 {
     line-height: 20px;
     display: block;
   }
+
   .text-danger {
     font-size: 12px;
     line-height: 16px;
