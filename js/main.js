@@ -1,7 +1,19 @@
-import colorsLegend from '../colorsLegend.json' assert {type: 'json'};
-import genocideData from '../genocideData.json' assert {type: 'json'};
+let allKeys;
+let colorsLegend;
+let genocideData;
 
-const allKeys = colorsLegend.map((e) => e.value);
+fetch('../colorsLegend.json')
+  .then(response => response.json())
+  .then(data => {
+    colorsLegend = data;
+    allKeys = colorsLegend.map((e) => e.value);
+  });
+
+  fetch('../genocideData.json')
+  .then(response => response.json())
+  .then(data => {
+    genocideData = data;
+  });
 
 let currentYear = 2022;
 
