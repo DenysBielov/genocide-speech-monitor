@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/leaflet.css" />
+    <link rel="stylesheet" href="/css/qgis2web.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>Historical Borders : an Example</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-up">based on opensource data</div>
+      <div class="header-down">
+        <span class="warn">full timeline is in progress and coming soon</span>
+
+        <ul class="menu">
+          <li>
+            <a href="/check.html" class="link">check the speech</a>
+          </li>
+          <li>
+            <a href="/about.html" class="link">about</a>
+          </li>
+        </ul>
+
+        <div class="range">
+          <span class="range__item"></span>
+          <span class="range__item"></span>
+
+          <span class="range__item"></span>
+
+          <span class="range__item range__item-text" data-value="1932"
+            >1932</span
+          >
+          <span class="range__item"></span>
+          <span class="range__item"></span>
+
+          <span class="range__item"></span>
+          <span class="range__item"></span>
+          <span class="range__item"></span>
+
+          <span class="range__item"></span>
+          <span class="active range__item-text range__item" data-value="2022"
+            >2022</span
+          >
+        </div>
+      </div>
+    </header>
+    <div class="custom-popup opacity-0" data-custom-popup>
+      <div class="custom-popup-first">
+        <img src="/img/close.svg" alt="" data-close class="close-icon" />
+        <h3 class="custom-popup__header" data-popup-name></h3>
+        <p class="custom-popup__percent"><span data-popup-percent></span></p>
+
+        <p class="custom-popup__text" data-popup-text></p>
+        <h3 class="custom-popup__quotes">Quotes</h3>
+      </div>
+      <div class="custom-popup-second">
+        <div data-popup-second class="custom-popup-second__inn"></div>
+        <p class="custom-popup-second-more">More to be announced</p>
+      </div>
+    </div>
+    <div id="map"></div>
+    <footer class="copyright">
+      <div class="legend">
+        <div class="legend__name">Genocidal rhetoric level:</div>
+        <div class="legend__item">
+          <span
+            class="legend__item-color"
+            style="background-color: #fff"
+          ></span>
+          <span class="legend__item_text-desk">Analysis in progress</span>
+          <span class="legend__item_text-mob">Analizing</span>
+
+        </div>
+        <div class="legend__item">
+          <span
+            class="legend__item-color"
+            style="background-color: #fdd"
+          ></span>
+          <span class="legend__item_text-desk"> Low level of genocidal rhetoric</span>
+          <span class="legend__item_text-mob"> Null or low</span>
+
+         
+         
+        </div>
+        <div class="legend__item">
+          <span
+            class="legend__item-color"
+            style="background-color: #ffbfc0"
+          ></span>
+          <span class="legend__item_text-desk"> Average level of genocidal rhetoric</span>
+
+          <span class="legend__item_text-mob"> Average</span>
+
+        </div>
+        <div class="legend__item">
+          <span
+            class="legend__item-color"
+            style="background-color: #ff5758"
+          ></span>
+          <span class="legend__item_text-desk">  High level of genocidal rhetoricc</span>
+
+          <span class="legend__item_text-mob"> High</span>
+
+        </div>
+        <div class="legend__item">
+          <span
+            class="legend__item-color"
+            style="background-color: #d70000"
+          ></span>
+          <span class="legend__item_text-desk">Dangerous level of genocidal rhetoric</span>
+
+          <span class="legend__item_text-mob"> Dangerous</span>
+
+        </div>
+      </div>
+
+      <div class="copyright__inn">
+        <a href="#" target="_blank">
+          <img src="/img/genocide.svg" />
+        </a>
+        <a href="#" target="_blank" class="copyright__inn_logo">
+          <img src="/img/ukrainian.svg" />
+        </a>
+      </div>
+    </footer>
+    <script src="/js/qgis2web_expressions.js"></script>
+    <script src="/js/leaflet.js"></script>
+    <script src="/js/leaflet.rotatedMarker.js"></script>
+    <script src="/js/leaflet.pattern.js"></script>
+    <script src="/js/leaflet-hash.js"></script>
+    <script src="/js/Autolinker.min.js"></script>
+    <script src="/js/rbush.min.js"></script>
+    <script src="/js/labelgun.min.js"></script>
+    <script src="/js/labels.js"></script>
+    <script src="/js/leaflet.wms.js"></script>
+    <script src="/lib/d3.v5.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

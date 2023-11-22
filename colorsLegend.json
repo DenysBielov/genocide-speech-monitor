@@ -1,0 +1,32 @@
+[
+    {
+      "value": "0",
+      "color": "#F8F8F8",
+      "caption": "Analysis in progress",
+      "shortCaption": "Analizing"
+    },
+    {
+      "value": "0.0001",
+      "color": "#FFDDDD",
+      "caption": "Null or low level of genocidal rhetoric",
+      "shortCaption": "Null or low"
+    },
+    {
+      "value": "0.5",
+      "color": "#FFBFC0",
+      "caption": "Average level of genocidal rhetoric",
+      "shortCaption": "Average"
+    },
+    {
+      "value": "5",
+      "color": "#FF5758",
+      "caption": "High level of genocidal rhetoric",
+      "shortCaption": "High"
+    },
+    {
+      "value": "15",
+      "caption": "Dangerous level of genocidal rhetoric",
+      "shortCaption": "Dangerous",
+      "color": "#D70000"
+    }
+  ]

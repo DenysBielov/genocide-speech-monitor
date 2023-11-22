@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/check.css"/>
+
+    <title>Genocide Speech Monitor</title>
+  </head>
+  <body>
+    <main>
+      <span class="background-blob"></span>
+      <a href="/main.html" data-close class="close-icon">
+        <img src="/img/close.svg" alt="" />
+      </a>
+      <div class="main-container">
+        <h1 class="title">Check the speech</h1>
+        <div class="disclaimer">
+          <span class="text-danger label">Disclaimer:</span>
+          <div class="text-danger">
+            This tool is in the early stages of development. It can currently
+            detect the presence of genocidal rhetoric to raise awareness, but it
+            cannot be relied upon as a certified source of information in the
+            final instance.
+          </div>
+        </div>
+        <div class="speech-input-wrapper">
+          <span class="loader"></span>
+          <h2>
+            Insert the public speech of government officials here to check the
+            level of genocidal rhetoric in it.
+          </h2>
+          <div class="text-area-wrapper">
+            <textarea
+              id="speech-text"
+              placeholder="Up to 12 000 words"
+              onchange="handleTextAreaChange()"
+            ></textarea>
+            <button id="check-button" class="btn" onclick="checkText()" disabled>Check</button>
+          </div>
+        </div>
+        <div class="analyse-wrapper">
+        </div>
+      </div>
+      <span class="footer-title">GenosideSpeechMonitor</span>
+    </main>
+    <script src="./js/check.js" defer></script>
+  </body>
+</html>
