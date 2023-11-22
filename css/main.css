@@ -109,7 +109,7 @@ header {
   justify-self: end;
   align-self: end;
   display: flex;
-  gap: 40px;
+  gap: 16px;
   align-items: center;
 }
 .header-up {
@@ -141,6 +141,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
+  max-width: calc(100vw - 386px);
+  /* todo: temp styles, remove after fool timeline will be added */
 }
 .link {
   padding: 8px;
@@ -152,6 +154,10 @@ header {
   line-height: 16px;
   color: #a3a3a3;
   text-decoration: none;
+  border: 1px solid #D6D6D6;
+  padding: 10px 16px;
+  background: white;
+  white-space: nowrap;
 }
 .warn {
   font-size: 10px;
@@ -359,7 +365,37 @@ header {
   transform: translateX(-50%);
 }
 
+.disclaimer {
+  border: 1px solid #ffbfc0;
+  background: #fef1f0;
+  padding: 8px;
+  color: #92090a;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 100000;
+  max-width: 600px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+.disclaimer__header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.14px;
+  margin-bottom: 8px;
+}
+
+p.disclaimer__text {
+  color: #92090a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
 
 @media (max-width: 1279px) {
   .copyright__inn {
@@ -381,7 +417,11 @@ header {
     position: fixed;
     top: 8px;
     right: 16px;
-    gap: 1rem
+    right: 50%;
+    transform: translateX(50%);
+    width: 100vw;
+    justify-content: center;
+    padding-top: 8px;
   }
 
   .copyright {
@@ -390,6 +430,19 @@ header {
     left: 0;
     max-width: 100%;
   }
+
+  .disclaimer {
+    top: 50px;
+    max-width: 600px;
+    margin-left: 0;
+    display: block;
+    font-size: 13px;
+    right: 50%;
+    transform: translateX(50%);
+    min-width: 320px;
+    width: 335px;
+  }
+
   .legend {
     border: none;
     display: grid;
@@ -416,11 +469,14 @@ header {
   .range {
     width: 100%;
     justify-content: space-evenly;
+    max-width: initial;
   }
 
   .range__item:first-child,
   .range__item:nth-child(2),
-  .range__item:nth-child(3) {
+  .range__item:nth-child(3),
+  .range__item:nth-child(4),
+  .range__item:nth-child(5) {
     display: none;
   }
   .range .range__item {
