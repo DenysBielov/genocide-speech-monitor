@@ -3,19 +3,19 @@ let colorsLegend;
 let genocideData;
 
 fetch('../colorsLegend.json')
-  .then(response => response.json())
-  .then(data => {
-    colorsLegend = data;
-    allKeys = colorsLegend.map((e) => e.value);
-  });
+.then(response => response.json())
+.then(data => {
+  colorsLegend = data;
+  allKeys = colorsLegend.map((e) => e.value);
+});
 
-  fetch('../genocideData.json')
-  .then(response => response.json())
-  .then(data => {
-    genocideData = data;
-  });
+fetch('../genocideData.json')
+.then(response => response.json())
+.then(data => {
+  genocideData = data;
+});
 
-let currentYear = 2022;
+let currentYear = 1932;
 
 const rangeBtns = [...document.querySelectorAll(".range__item-text")];
 

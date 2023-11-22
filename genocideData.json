@@ -73,46 +73,6 @@
             "author": "Francesco Lollobrigida, minister of agriculture"
           }
         ]
-      },
-      {
-        "country": "Ukraine",
-        "value": "0.02",
-        "quotes": [
-          {
-            "text": "",
-            "author": ""
-          }
-        ]
-      },
-      {
-        "country": "France",
-        "value": "0.02",
-        "quotes": [
-          {
-            "text": "",
-            "author": ""
-          }
-        ]
-      },
-      {
-        "country": "United Kingdom",
-        "value": "0.02",
-        "quotes": [
-          {
-            "text": "",
-            "author": ""
-          }
-        ]
-      },
-      {
-        "country": "United States",
-        "value": "0.02",
-        "quotes": [
-          {
-            "text": "",
-            "author": ""
-          }
-        ]
       }
     ],
     "1932": [
@@ -219,24 +179,6 @@
           {
             "text": "For the first time, twenty years after landing on these lands, the two colonies are completely occupied and pacified.May this date not only be a reason for legitimate satisfaction for all of us, but also a starting point for a more vigorous impulse in the civil progress of the two Colonies.",
             "author": "General Graziani in his book quotes Pietro Badoglio, Marshal of Italia, Governor of Tripolitania and Cyrenaica"
-          }
-        ]
-      },
-      {
-        "country": "Iraq",
-        "value": "15",
-        "quotes": [
-          {
-            "text": "The best remedy for this disease is to expel the Assyrians promptly to avoid turmoil and disorder.",
-            "author": "Al-Hezb al-Watani Party to Prime Minister Rashid Ali"
-          },
-          {
-            "text": "The Assyrian community should be settled in such a way as to obviate its being scattered among the populations of other races.",
-            "author": "A committee appointed by the League Council, under the presidency of Eduard Benes"
-          },
-          {
-            "text": "Triumphant arches were erected and decorated with melons pierced with daggers, symbolizing the heads of murdered Assyrians. Crown Prince Ghazi himself came to the city to award 'victorious' colours to those military and tribal leaders who participated in the massacres and the looting.",
-            "author": "Reception of Iraqi Troops in Mosul"
           }
         ]
       }
