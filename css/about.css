@@ -47,8 +47,8 @@
 }
 
 .content-top {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 
@@ -149,6 +149,12 @@ p.disclaimer__text {
     flex-direction: columns;
   }
 
+  .content-top {
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-start;
+  }
+
   .blur-outer {
     display: none;
   }
@@ -171,6 +177,7 @@ p.disclaimer__text {
 
   .disclaimer {
     margin-bottom: 40px;
+    max-width: inherit;
   }
 
   .content__left,
