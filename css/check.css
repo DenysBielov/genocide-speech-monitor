@@ -122,6 +122,27 @@ h2 {
   content: "%";
 }
 
+.text {
+  max-height: 390px;
+  overflow: auto;
+  position: relative;
+  display: block;
+}
+
+.text-wrapper {
+  position: relative;
+}
+
+.text-wrapper:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, white);
+  left: 0;
+  height: 20px;
+}
+
 .main-section {
   display: flex;
   align-items: center;

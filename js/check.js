@@ -61,6 +61,7 @@ function createAnalysisNode(text, percentage) {
   percentageSpan.classList.add("percentage");
 
   const textWrapper = document.createElement("div");
+  textWrapper.classList.add("text-wrapper");
   textWrapper.appendChild(statementSpan);
   textWrapper.appendChild(statementTextSpan);
 
