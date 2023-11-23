@@ -93,9 +93,28 @@ li {
   color: #fafafa;
   padding: 12px 16px;
 }
+
+.data-exists {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+/* Styles for all browsers */
 .data-exists:hover {
   filter: url(#blur);
 }
+
+/* Override styles for Safari */
+@supports not (backdrop-filter: none) {
+  .data-exists:hover {
+    filter: none;
+  }
+}
+
 .country__pin {
   background: #292929;
   width: 8px;
