@@ -101,11 +101,8 @@ function makeMap(data) {
         zoomControl: true,
         maxZoom: 28,
         minZoom: 1,
-    }).fitBounds([
-        [-93.0414080258767, -111.06282314172664],
-        [137.43642981196118, 140.9371768582734],
-    ]);
-    var hash = new L.Hash(map);
+    });
+    map.fitBounds([[-21.490207349773044, -92.22452807433967],[77.83343912914836, 179.7090420149799]]);
 
     var bounds_group = new L.featureGroup([]);
     function setBounds() { }
