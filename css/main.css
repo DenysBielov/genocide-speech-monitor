@@ -379,7 +379,7 @@ header {
   color: #92090a;
   position: fixed;
   top: 80px;
-  right: 0;
+  left: 0;
   z-index: 100000;
   max-width: 600px;
   flex: 0 0 auto;
@@ -444,6 +444,7 @@ p.disclaimer__text {
     margin-left: 0;
     display: block;
     font-size: 13px;
+    left: initial;
     right: 50%;
     transform: translateX(50%);
     min-width: 320px;
