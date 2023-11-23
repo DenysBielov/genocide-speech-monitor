@@ -202,7 +202,7 @@ h2 {
   flex-direction: column;
   grid-template-columns: 29rem 29rem;
   gap: 10rem;
-  row-gap: 5rem;
+  row-gap: 1rem;
   grid-template-areas:
     "title disclaimer"
     "input analysis";
