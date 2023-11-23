@@ -296,6 +296,13 @@ h2 {
     overflow: scroll;
   }
 
+  .title {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+    margin: 12px 0 18px;
+    letter-spacing: -1.44px;
+  }
+
   .main-container {
     gap: 0;
     row-gap: 0;
@@ -306,6 +313,7 @@ h2 {
       "input"
       "analysis";
     padding-inline: 1rem;
+    padding-top: 16px;
   }
 
   .background-blob {
