@@ -39,6 +39,13 @@ h2 {
   color: #737373;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .btn {
   text-decoration: none;
   color: var(--base-white, #fff);
@@ -157,9 +164,9 @@ h2 {
   font-size: 8rem;
   font-weight: bold;
   color: #e5e5e5;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   letter-spacing: -8px;
   z-index: -2;
 }
