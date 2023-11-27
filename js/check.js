@@ -17,16 +17,23 @@ async function checkText() {
     if (!analysisResult.ok) {
       throw "Response is not successful. " + analysisResult.statusText;
     }
-
     const analysisObject = await analysisResult.json();
 
+    const statements = [
+      ...analysisObject.Dehumanization.Statements,
+      ...analysisObject.Misinformation.Statements,
+      ...analysisObject.OppressionCalls.Statements
+    ]
+
     const analysisTextNode = createAnalysisNode(
-      analysisObject.statement,
-      analysisObject.percentage
+      statements.join(" "),
+      analysisObject.TotalPercent
     );
     analyseWrapper.replaceWith(analysisTextNode);
-  } catch {
-    const errorNode = createErrorNode("An unexpected error occured. Try again later.");
+  } catch (e) {
+    const errorNode = createErrorNode(
+      "An unexpected error occured. Try again later."
+    );
 
     analyseWrapper.replaceWith(errorNode);
   }

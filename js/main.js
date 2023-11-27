@@ -85,7 +85,6 @@ function mount() {
     const year = currentYear === 2022 ? 2010 : 1938;
     d3.json(`../geojson/world_${year}.geojson`)
         .then(function (data, error) {
-            console.log(data);
             makeMap(data);
         })
         .then(function () {
@@ -288,7 +287,6 @@ function makeMap(data) {
  * @see https://stackoverflow.com/questions/28235792/leaflet-polygon-with-fuzzy-outline
  */
 function makeBlurFilter() {
-    // console.log(svg);
     var svgFilter = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "filter"
