@@ -77,7 +77,8 @@
 
 
 .content__left {
-  max-width: 50%;
+  max-width: 40%;
+  width: 50%;
 }
 
 p.content__left_p {
@@ -144,11 +145,11 @@ p.disclaimer__text {
 
 .video-wrapper {
   position: relative;
-  padding-top: 56.25%; /* for 16:9 aspect ratio */
+  padding-top: 100%; /* for 1:1 aspect ratio */
   height: 0;
 }
 
-.video-wrapper iframe {
+.video-wrapper video {
   position: absolute;
   top: 0;
   left: 0;
@@ -158,7 +159,7 @@ p.disclaimer__text {
 
 @media (max-width: 992px) {
   .content {
-    flex-direction: columns;
+    flex-direction: column;
   }
 
   .content-top {
@@ -201,6 +202,10 @@ p.disclaimer__text {
   .content__left,
   .content__inn {
     max-width: 100%;
+  }
+
+  .content__left {
+    width: 100%;
   }
 
   .content__inn {
