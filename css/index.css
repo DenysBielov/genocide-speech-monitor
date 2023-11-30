@@ -218,6 +218,7 @@ footer {
   margin-left: 15%;
   height: 30vh;
   overflow-y: hidden;
+  margin-bottom: 20px;
 }
 
 .content-bottom {
@@ -232,6 +233,11 @@ footer {
 
 .swiper-slide-prev {
   opacity: 0.5;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  height: auto !important;
+  margin-bottom: 40px !important;
 }
 
 .swiper>.swiper-wrapper {
