@@ -143,7 +143,7 @@
         </div>
         <div class="video-wrapper">
           <iframe src="https://player.vimeo.com/video/887602406?h=c42b51ab94?autoplay=1&loop=1&mute=1" frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen ></iframe>
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -176,41 +176,45 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    autoplay: {
-      delay: 1,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "1",
-    loop: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        loop: true,
-        spaceBetween: 80,
-        speed: 10000,
-        direction: "vertical",
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: false,
-        },
+  window.onload = function () {
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 1,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
+      slidesPerView: "1",
+      loop: true,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 80,
+          speed: 10000,
+          direction: "vertical",
+          autoplay: {
+            delay: 1,
+            disableOnInteraction: false,
+          },
+        },
 
-      640: {
-        autoplay: {
-          delay: 1,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
+        640: {
+          autoplay: {
+            delay: 1,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          },
+          speed: 10000,
+          direction: "vertical",
+          spaceBetween: 80,
+          slidesPerView: 2,
+          loop: true,
         },
-        speed: 10000,
-        direction: "vertical",
-        spaceBetween: 80,
-        slidesPerView: 2,
-        loop: true,
       },
-    },
-  });
+    });
+  };
 </script>
 
 </html>
