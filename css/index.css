@@ -7,7 +7,7 @@
 }
 
 body {
-
+  -webkit-font-smoothing: antialiased;
 }
 
 .outer {
@@ -50,8 +50,7 @@ footer {
   width: 100%;
   justify-content: center;
   z-index: 1;
-  backdrop-filter: blur(4.5px);
-  background: rgba(255, 251, 250, 0.60);
+  background: #FAFAFA;
 }
 
 .footer-wrapper {
@@ -127,7 +126,6 @@ footer {
 .content-text {
   z-index: 2;
   bottom: 0;
-  padding-left: 24px;
   display: grid;
   gap: 24px;
   width: 100%;
@@ -260,6 +258,71 @@ footer {
   height: 100%;
 }
 
+.quote-reviews {
+  backdrop-filter: blur(4.5px);
+  background: rgba(255, 251, 250, 0.60);
+  position: relative;
+  z-index: 1;
+}
+
+.quote-reviews-wrapper {
+  max-width: 1176px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 80px 16px;
+}
+
+.quote-reviews-title {
+  color: var(--grey-950, #0F0F0F);
+  text-align: center;
+  font-family: Public Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: -3.84px;
+  margin-bottom: 60px;
+}
+
+.quote-reviews-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 56px 48px;
+}
+
+.quote-review-text {
+  color: var(--grey-950, #0F0F0F);
+  font-family: Piazzolla;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.quote-review-author {
+  padding: 16px 24px;
+  max-width: 336px;
+}
+
+.quote-review-author-name {
+  color: var(--grey-900, #141414);
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.quote-review-author-position {
+  color: var(--grey-600, #525252);
+  font-family: Public Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 @media (max-width: 992px) {
 
   .content-bottom,
@@ -373,6 +436,45 @@ footer {
   .btn-about {
     width: 100%;
     max-width: 600px;
+  }
+
+  .quote-reviews-wrapper {
+    padding: 64px 16px;
+  }
+
+  .quote-reviews-title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+  }
+
+  .quote-reviews-items {
+    grid-template-columns: 1fr;
+    grid-gap: 48px 0;
+  }
+
+  .quote-review-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px
+  }
+
+  .quote-review-author {
+    padding: 8px 16px;
+    max-width: initial;
+  }
+
+  .quote-review-author-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .quote-review-author-position {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
   }
 
 }
